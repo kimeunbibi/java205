@@ -57,7 +57,7 @@ public class Calculator {
 	
 		System.out.println("입력 받은 반지름의 길이 : " + r);
 		System.out.println("원의 둘레 : " + cal.circum(r));
-		System.out.println("원의 넓이 : " + cal.cirArea(r));
+		System.out.println("원의 넓이 : " + cal.cirArea(r));	
 		
 	}
 	

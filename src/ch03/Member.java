@@ -13,7 +13,6 @@ public class Member {
 		} else {
 			System.out.println("무료접종 대상이 아닙니다.");
 		}
-		
 	}
 		
 	static void Check2(int year) {
