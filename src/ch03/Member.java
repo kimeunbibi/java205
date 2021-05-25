@@ -35,15 +35,14 @@ public class Member {
 
 	public static void main(String[] args) {
 
-	while(true) {	
-	Scanner scanner = new Scanner(System.in);
-	System.out.println("태어난 해?");
-	int year = scanner.nextInt();
-	Check1(year);
-	Check2(year);
+		while(true) {	
+			Scanner scanner = new Scanner(System.in);
+			System.out.println("태어난 해?");
+			int year = scanner.nextInt();
+			Check1(year);
+			Check2(year);
 	
-	
-}
+		}
 
-}
+	}
 }
