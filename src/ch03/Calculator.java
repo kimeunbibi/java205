@@ -54,9 +54,10 @@ public class Calculator {
 		System.out.println("----------------");
 		System.out.println("반지름을 입력해주세요.");
 		float r = scanner.nextFloat();
-		
+	
 		System.out.println("입력 받은 반지름의 길이 : " + r);
-		System.out.println();
+		System.out.println("원의 둘레 : " + cal.circum(r));
+		System.out.println("원의 넓이 : " + cal.cirArea(r));
 		
 	}
 	
