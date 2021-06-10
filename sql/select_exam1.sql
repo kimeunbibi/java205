@@ -29,16 +29,15 @@ select ename, sal
 from emp
 where sal not between 2000 and 3000
 ;
---6. 1981년 2월 20일 부터 1981년 5월 1일 사이에 입사한 사원의 이름, 담당업무, 입사일을 출력하시오.?
+--6. 1981년 2월 20일 부터 1981년 5월 1일 사이에 입사한 사원의 이름, 담당업무, 입사일을 출력하시오.
 select ename, job, hiredate
 from emp
 where hiredate between '81/02/20' and '81/05/01​'
-order by hiredate
 ;
 --7. 부서번호가 20 및 30에 속한 사원의 이름과 부서번호를 출력, 이름을 기준(내림차순)으로 영문자순으로 출력하시오.
 select ename, deptno
 from emp
-where deptno between 20 and 30
+where deptno=20 or deptno=30
 order by ename desc
 ;
 --8. 사원의 급여가 2000에서 3000사이에 포함되고 부서번호가 20 또는 30인 사원의 이름, 급여와 부서번호를 출력, 이름순(오름차순)으로 출력하시오.?
@@ -61,8 +60,8 @@ where mgr is null
 --11. 커미션을 받을 수 있는 자격이 되는 사원의 이름, 급여, 커미션을 출력하되 급여 및 커미션을 기준으로 내림차순 정렬하여 표시하시오.
 select ename, sal, comm
 from emp
-where comm is not null
-order by comm desc
+where comm is not null or comm = 0
+order by sal desc, comm desc
 ;
 --12. 이름의 세번째 문자가 R인 사원의 이름을 표시하시오.
 select ename
