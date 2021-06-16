@@ -5,24 +5,25 @@
 drop table emp; 
 drop table dept; 
 
-create table dept(                        -- dept table »ı¼º
-  deptno number,                          -- ºÎ¼­¹øÈ£
-  dname  varchar2(14),                    -- ºÎ¼­¸í
-  loc    varchar2(13),                    -- ºÎ¼­À§Ä¡
-  constraint pk_dept primary key (deptno) -- deptno·Î pk¼³Á¤
+create table dept(                        // dept table ìƒì„±
+  deptno number,                          // ë¶€ì„œë²ˆí˜¸
+  dname  varchar2(14),                    // ë¶€ì„œëª…
+  loc    varchar2(13),                    // ë¶€ì„œìœ„ì¹˜
+  constraint pk_dept primary key (deptno) // deptnoë¡œ pkì„¤ì •
 );
 
-create table emp(                         -- emp table »ı¼º
-  empno    number,                        -- Á÷¿ø¹øÈ£
-  ename    varchar2(10),                  -- Á÷¿ø¸í
-  job      varchar2(9),                   -- Á÷Ã¥
-  mgr      number(4),                     -- ´ã´ç¸Å´ÏÀú
-  hiredate date,                          -- ÀÔ»çÀÏ
-  sal      number(7),                     -- ¿ù±Ş
-  comm     number(7),                     -- º¸³Ê½º
-  deptno   number,                        -- ºÎ¼­¹øÈ£
-  constraint pk_emp primary key (empno)   -- empno·Î pk¼³Á¤
+create table emp(                         // emp table ìƒì„±
+  empno    number,                        // ì§ì›ë²ˆí˜¸
+  ename    varchar2(10),                  // ì§ì›ëª…
+  job      varchar2(9),                   // ì§ì±…
+  mgr      number(4),                     // ë‹´ë‹¹ë§¤ë‹ˆì €
+  hiredate date,                          // ì…ì‚¬ì¼
+  sal      number(7),                     // ì›”ê¸‰
+  comm     number(7),                     // ë³´ë„ˆìŠ¤
+  deptno   number,                        // ë¶€ì„œë²ˆí˜¸
+  constraint pk_emp primary key (empno)   // empnoë¡œ pkì„¤ì •
 );
+
 -- DEPT DML
 insert into dept values(10, 'ACCOUNTING', 'NEW YORK');
 insert into dept values(20, 'RESEARCH', 'DALLAS');
